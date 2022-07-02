@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Quicksand:wght@400;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------header--------------------------------------------------- */
+header{
+    background-color: rgb(49, 79, 177);
+    color: white;
+    padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header .row{
+    display: flex;
+    flex-direction: row;
+    line-height: 80px;
+}
+
+.logo{
+    flex-basis: 25%;
+}
+
+
+.menu{
+    flex-basis: 75%;
+    text-align: end;
+}
+
+.menu nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.hamburger{
+   display: none; 
+}
+
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+}
+.menu nav li:hover a{
+    color: black;
+}
+
+.menu nav li:hover{
+    background-color: white;
+    transition-duration: 0.2s;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown nav li{
+    list-style-type: none;
+    display: block;
+    margin-left: 10px;
+}
+
+
+/* -----------------------------------------jumbotron ------------------------- */
+#jumbotron{
+    display: flex;
+    min-height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#jumbotron .col1{
+    flex-basis: 50%;
+    text-align: start;
+    padding-top: 120px;
+    padding-left: 70px;
+    color: rgb(49, 79, 177);
+}
+
+#jumbotron h1{
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 3rem;
+}
+#jumbotron p{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+#jumbotron button{
+    background-color: white;
+    border: 3.5px solid rgb(49, 79, 177);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(49, 79, 177);
+    border-radius: 50px;
+    transition-duration: 0.1s;
+}
+#jumbotron button:hover{
+    background-color: rgb(49, 79, 177);
+    color: white;
+    transition-duration: 0.1s;
+}
+
+#jumbotron a{
+    text-decoration: none;
+    color: rgb(49, 79, 177);;
+}
+#jumbotron button:hover a{
+    text-decoration: none;
+    color: rgb(251, 252, 255);;
+}
+
+#jumbotron .col2{
+    flex-basis: 50%;
+    padding-top: 100px;
+}
+
+#jumbotron img{
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+
+
+/*----------------------------------------------------- about--------------------------------------------------- */
+#about{
+    display: flex;
+    background-color: rgb(49, 79, 177);
+    color: white;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+#about h1{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5rem;
+}
+
+#about .row{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#about .col1{
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+
+#about .col2{
+    flex-basis: 50%;
+    padding: 70px 20px;
+    line-height: 2rem;
+}
+
+#about img{
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+
+/* -----------------------------------------------------service----------------------------------------------------------------------- */
+
+#service {
+    display: flex;
+    flex-direction: column;
+    color: rgb(49, 79, 177);
+}
+
+#service h1{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5rem;
+}
+
+#service .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+#service .card{
+    width: 25%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.2s;
+}
+
+#service .card:hover{
+    transform: translateY(-20px);
+    transition-duration: 0.1s;
+}
+
+
+#service img{
+    width: 80px;
+}
+
+#service h2{
+    margin-top: 10px;
+}
+
+/*---------------------------------------------------------- team -------------------------------------*/
+
+#team{
+    display: flex;
+    flex-direction: column;
+}
+
+#team h1{
+    color: rgb(49, 79, 177);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5rem;
+}
+
+#team .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#team .card{
+    width: 18%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(0, 138, 202);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.2s;
+}
+
+#team .card:hover{
+    transform: translateY(-20px);
+    transition-duration: 0.1s;
+}
+
+#team .card h2{
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+#team .card img{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    width: 170px;    
+}
+
+/* -------------------------------------------------- contact ----------------------------------------------------- */
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact h1{
+    color: rgb(49, 79, 177);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5rem;
+}
+
+#contact img{
+    width: 400px;
+}
+
+#contact table img{
+    width: 40px;
+}
+
+#contact tbody td{
+    padding-left: 20px;
+    color: rgb(49, 79, 177);
+}
+
+#contact col{
+    width: 30%;
+    margin: 0 20px;
+}
+
+#contact aside{
+    width: 18%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(49, 79, 177);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.2s;
+}
+
+#contact aside h2{
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+#contact aside img{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    width: 170px;    
+}
+/*----------------------------------------------- contact ----------------------------------------*/
+
+footer{
+    background-color: rgb(49, 79, 177);
+}
+
+footer h3{
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1145px){
+    #team .card{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 815px){
+    #team .card{
+        width: 40%;
+    }
+
+    #service .card{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 520px){
+    #team .card{
+        width: 70%;
+    }
+
+    #service .card{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    #about img, #jumbotron img{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 845px){
+    #contact img{
+        width: 300px;
+       
+    }
+}
+
+@media only screen and (max-width: 1120px){
+    #contact .col{
+        width: 45%;
+    }
+    #contact aside{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #contact{
+        align-self: center;
+    }
+    
+    #contact .col{
+        width: 60%;
+    }
+
+    #contact img{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    #contact aside{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #jumbotron .col1{
+        padding-top: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 745px){
+    #jumbotron{
+        flex-direction: column;
+    }
+    
+    #jumbotron .col1{
+        text-align: center;
+        padding-top: 140px;
+        padding-left: 0;
+        padding-bottom: 80px;
+    }
+    
+    #jumbotron .col2{
+        flex-basis: 50%;
+        padding-top: 0;
+    }
+    #about .row{
+        flex-direction: column;
+    }
+
+    #about .col2{
+        padding: 70px;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 701px){
+    .menu nav {
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        text-align: end;
+    }
+    
+    .hamburger svg{
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5px;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+
+    .dropdown{
+        background-color: rgb(49, 79, 177);
+    }
+    
+
+    .dropdown ul li{
+        list-style-type: none;
+        padding: 12px 0;
+    }
+
+    .dropdown ul li:nth-child(even){
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    
+    .dropdown nav{
+        flex-grow: 1;
+    }
+
+}
